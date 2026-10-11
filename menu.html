@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mamma Mia Ristorante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <nav id="mainNav">
+        <div class="nav-links nav-left">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="reward.html">Reward</a>
+        </div>
+        
+        <a href="index.html" class="logo">
+            <h2>MAMMA MIA</h2>
+            <span>RISTORANTE</span>
+        </a>
+        
+        <div class="nav-links nav-right">
+            <a href="#">Reservations</a>
+            <a href="about.html">About</a>
+            <a href="order.html" class="btn btn-gold" style="padding: 10px 20px;">Order</a>
+        </div>
+    </nav>
+
+    <header class="menu-hero">
+        <div class="menu-hero-content">
+            <h4>Discover our flavors</h4>
+            <h1>OUR MENU</h1>
+        </div>
+    </header>
+
+    <section class="menu-page-section">
+        
+        <ul class="menu-filters" id="menuFilters">
+            <li><button class="filter-btn active" data-filter="all">ALL</button></li>
+            <li><button class="filter-btn" data-filter="starters">STARTERS</button></li>
+            <li><button class="filter-btn" data-filter="main">MAIN COURSE</button></li>
+            <li><button class="filter-btn" data-filter="desserts">DESSERTS</button></li>
+            <li><button class="filter-btn" data-filter="beverages">BEVERAGES</button></li>
+        </ul>
+
+        <div class="menu-page-grid">
+            
+            <div class="menu-item-card" data-category="starters">
+                <div class="card-img-wrapper">
+                    <span class="badge-bestseller">⭐ BESTSELLER</span>
+                    <img src="assets/images/carpaccio-di-manzo.png" alt="Carpaccio di Manzo">
+                    <span class="badge-rating">⭐ 4.9</span>
+                </div>
+                <div class="card-content">
+                    <h3>Carpaccio di Manzo</h3>
+                    <p>Thinly sliced premium raw Wagyu beef, drizzled with white truffle oil, topped with arugula and aged parmesan shavings.</p>
+                    <div class="card-footer">
+                        <span class="price">$28.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="starters">
+                <div class="card-img-wrapper">
+                    <span class="badge-bestseller">⭐ BESTSELLER</span>
+                    <img src="assets/images/burrata-al-tartufo.png" alt="Burrata al Tartufo">
+                    <span class="badge-rating">⭐ 4.9</span>
+                </div>
+                <div class="card-content">
+                    <h3>Burrata al Tartufo</h3>
+                    <p>Fresh creamy burrata cheese served with roasted heirloom tomatoes, basil oil, and a rich balsamic reduction glaze.</p>
+                    <div class="card-footer">
+                        <span class="price">$24.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="main">
+                <div class="card-img-wrapper">
+                    <span class="badge-bestseller">⭐ BESTSELLER</span>
+                    <img src="assets/images/truffle-mushroom-risotto.jpg" alt="Truffle Mushroom Risotto">
+                    <span class="badge-rating">⭐ 4.9</span>
+                </div>
+                <div class="card-content">
+                    <h3>Truffle Mushroom Risotto</h3>
+                    <p>Arborio rice slow-cooked in wild mushroom broth, finished with aged Parmigiano-Reggiano and fresh black truffle shavings.</p>
+                    <div class="card-footer">
+                        <span class="price">$32.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="main">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/lobster-ravioli.png" alt="Lobster Ravioli">
+                </div>
+                <div class="card-content">
+                    <h3>Lobster Ravioli all'Astice</h3>
+                    <p>Handmade artisan ravioli stuffed with sweet Maine lobster, served in a delicate saffron cream sauce and topped with black caviar.</p>
+                    <div class="card-footer">
+                        <span class="price">$45.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="main">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/bistecca-alla-fiorentina.png" alt="Bistecca alla Fiorentina">
+                </div>
+                <div class="card-content">
+                    <h3>Bistecca alla Fiorentina</h3>
+                    <p>Premium 12oz T-bone steak, wood-fired to perfection with fragrant rosemary, garlic butter, and sea salt flakes.</p>
+                    <div class="card-footer">
+                        <span class="price">$55.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="main">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/branzino-al-forno.png" alt="Branzino al Forno">
+                </div>
+                <div class="card-content">
+                    <h3>Branzino al Forno</h3>
+                    <p>Pan-seared Mediterranean seabass fillet, served with a zesty lemon caper butter sauce and roasted seasonal asparagus.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/Classic-Tiramisu.jpg" alt="Classic Tiramisu">
+                </div>
+                <div class="card-content">
+                    <h3>Classic Tiramisu</h3>
+                    <p>Layers of espresso-soaked artisanal savoiardi, whipped mascarpone cream, and dusted with rich Valrhona cocoa powder.</p>
+                    <div class="card-footer">
+                        <span class="price">$16.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/vanilla-bean-panna-cotta.webp" alt="Vanilla Bean Panna Cotta">
+                </div>
+                <div class="card-content">
+                    <h3>Vanilla Bean Panna Cotta</h3>
+                    <p>Silky and delicate Madagascar vanilla bean cream dessert, accompanied by a tangy wild berry compote and edible gold leaf.</p>
+                    <div class="card-footer">
+                        <span class="price">$14.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card" data-category="beverages">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/signature-negroni.jpg" alt="Signature Negroni">
+                </div>
+                <div class="card-content">
+                    <h3>Signature Negroni</h3>
+                    <p>A classic Italian cocktail blending premium gin, Campari, and sweet vermouth, served over a hand-carved clear ice sphere.</p>
+                    <div class="card-footer">
+                        <span class="price">$18.00</span>
+                        <button class="add-btn" aria-label="Add to cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <a href="#" class="logo">
+                <h2>MAMMA MIA</h2>
+                <span>RISTORANTE</span>
+            </a>
+            <p style="color: var(--text-gray); margin-top: 10px;">© 2026 Mamma Mia Ristorante. All rights reserved.</p>
+        </div>
+        <div class="footer-col footer-links">
+            <a href="#">Contact Us</a>
+            <a href="#">Rewards Program</a>
+        </div>
+        <div class="footer-col footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>

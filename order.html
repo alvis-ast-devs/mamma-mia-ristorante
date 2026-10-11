@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - Mamma Mia Ristorante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="bg-light-gray">
+    <nav id="mainNav">
+        <div class="nav-links nav-left">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reward.html">Reward</a>
+        </div>
+        
+        <a href="index.html" class="logo">
+            <h2>MAMMA MIA</h2>
+            <span>RISTORANTE</span>
+        </a>
+        
+        <div class="nav-links nav-right">
+            <a href="#">Reservations</a>
+            <a href="about.html">About</a>
+            <a href="order.html" class="btn btn-gold" style="padding: 10px 20px;">Order</a>
+        </div>
+    </nav>
+    <section class="order-section">
+        <h1 class="page-title">Place Your Order</h1>
+        <div class="order-layout">
+            <div class="order-form-container">
+                <form action="#" method="POST" id="orderForm">
+                    <div class="form-group">
+                        <label class="form-label">SERVICE OPTION</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="service_type" value="pickup" checked>
+                                Pick-up
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="service_type" value="delivery">
+                                Delivery
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="nameGroup">
+                        <label class="form-label" for="fullName">FULL NAME</label>
+                        <input type="text" id="fullName" class="form-input" placeholder="Jane Doe">
+                        <span class="error-msg">Please enter your name</span>
+                    </div>
+                    <div class="form-group" id="phoneGroup">
+                        <label class="form-label" for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="e.g. 08123456789">
+                        <span class="error-msg">Please enter a valid phone number (min. 8 digits)</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label class="form-label" for="chosenMenu">CHOSEN MENU</label>
+                            <select id="chosenMenu" class="form-select">
+                                <option value="tasting_menu">Tasting Menu</option>
+                                <option value="bistecca">Bistecca alla Fiorentina</option>
+                                <option value="risotto">Truffle Mushroom Risotto</option>
+                            </select>
+                        </div>
+                        <div class="form-group half-width">
+                            <label class="form-label" for="paymentMethod">PAYMENT METHOD</label>
+                            <select id="paymentMethod" class="form-select">
+                                <option value="credit_card">Credit Card (Online)</option>
+                                <option value="ewallet">E-Wallet</option>
+                                <option value="cash">Cash on Pickup</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">ADDITIONS</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="additions" value="truffle" checked>
+                                Extra Fresh Truffle (+$25)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="additions" value="parmesan">
+                                Extra Aged Parmesan (+$5)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group toggle-group">
+                        <span class="toggle-text">Include Eating Utensils?</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full">CONFIRM ORDER</button>
+                    
+                </form>
+            </div>
+            <div class="order-summary-container">
+                <div class="summary-card">
+                    <img src="assets/images/Classic-Tiramisu.jpg" alt="Chosen Menu Item">
+                    <div class="summary-content">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-item">
+                            <span class="item-name">Tasting Menu</span>
+                            <span class="item-price">$32</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="item-name">Extra Truffle</span>
+                            <span class="item-price">$25</span>
+                        </div>
+                        
+                        <div class="summary-divider"></div>
+                        
+                        <div class="summary-total">
+                            <span class="total-label">TOTAL</span>
+                            <span class="total-price">$57</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-col">
+            <a href="index.html" class="logo">
+                <h2>MAMMA MIA</h2>
+                <span>RISTORANTE</span>
+            </a>
+            <p style="color: var(--text-gray); margin-top: 10px;">© 2026 Mamma Mia Ristorante. All rights reserved.</p>
+        </div>
+        <div class="footer-col footer-links">
+            <a href="#">Contact Us</a>
+            <a href="#">Rewards Program</a>
+        </div>
+        <div class="footer-col footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
